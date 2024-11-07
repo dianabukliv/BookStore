@@ -1,9 +1,13 @@
 import MainBanner from "./components/MainBanner/MainBanner";
+import { NewBooks } from "./components/NewBooks/NewBooks";
+
 function App() {
   return (
-    <>
-      <MainBanner/>
-    </>
+    <div className="App">
+        <MainBanner/>
+      <NewBooks />
+        
+    </div>
   );
 }
 
