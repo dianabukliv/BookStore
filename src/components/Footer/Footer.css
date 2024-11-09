@@ -1,0 +1,62 @@
+footer {
+    width: 100%;
+    max-width: 1054px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-links {
+    display: flex;
+    max-width: 699px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    gap: 10px;
+    max-height: 40px;
+    margin: 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-links img {
+    height: 22px;
+}
+
+.contacts {
+    max-width: 238px;
+    align-items: top;
+}
+
+/* Медіа-запит для мобільних пристроїв */
+@media (max-width: 768px) {
+
+}
