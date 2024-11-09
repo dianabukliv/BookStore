@@ -1,0 +1,50 @@
+.discount-baner {
+    padding: 200px 0;
+}
+
+.discount-banner-container {
+  display: flex;
+  max-width: 1024px;
+  margin: 0 auto;
+gap: 24px;
+
+}
+
+.discount-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+
+}
+
+.discount-condition {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.discount-percent {
+font-size: 80px;
+font-weight: 600;
+line-height: 97.52px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+margin-bottom: 40px;
+}
+
+.discount-registration {
+ 
+  padding: 8px 24px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.discount-book {
+  
+}
+
+.discount-book img {
+  display: block;
+  max-width: 413px;
+}

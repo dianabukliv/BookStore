@@ -1,0 +1,193 @@
+button {
+  all: unset; 
+}
+.block_new, .block_sales, .top_seller {
+  width: 1440px;
+  height: 873px;
+  padding: 50px 208px;
+}
+.new_button, .sales_button, .top_seller {
+  width: 148px;
+  height: 20px;
+  padding: 12px 52px 12px 40px;
+  margin: 20px 0px;
+  gap: 12px;
+  border-radius: 0px 20px 20px 0px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; 
+}
+.new_button {
+  background: rgba(24, 178, 177, 0.5); 
+}
+.new_button:hover {
+  background: rgba(24, 178, 177, 0.7);
+}
+
+.vector {
+  margin-left: 10px;
+}
+.book_container {
+  display: flex;           
+  flex-wrap: wrap;          
+  gap: 24px;                  
+  justify-content: flex-start;
+}
+.book_component {
+  width: calc(25% - 20px);   
+  box-sizing: border-box;    
+}
+
+.image_container {
+  position: relative;
+  display: inline-block; 
+}
+
+.imposition {
+  position: absolute;
+  width: 98px;
+height: 23px;
+top: 10px;
+border-radius: 0px 6px 6px 0px;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+color: rgba(255, 255, 255, 1);
+
+}
+
+.new {
+  background: rgba(24, 178, 177, 0.5);
+  padding: 4px 33px 4px 10px;
+}
+.book_img {
+  width: 238px;
+  height: 320px;
+}
+.book_code {
+  margin: 12px 0px;
+}
+.book_name {
+  width: 238px;
+font-family: Montserrat;
+font-size: 18px;
+font-weight: 500;
+line-height: 25.2px;
+text-align: left;
+color: rgba(0, 0, 0, 1);
+margin: 12px 0px;
+}
+.book_avtor{
+  width: 238px;
+height: 20px;
+gap: 10px;
+opacity: 0px;
+margin: 12px 0px;
+} 
+
+.book_price {
+  color: rgba(155, 40, 20, 1);
+  margin: 12px 0px;
+}
+.check_circle {
+  width: 15px;
+  height: 15px;
+  margin: 0px 4px;
+  vertical-align: -3px;
+}
+.in_stock {
+  margin: 12px 0px;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+color: rgba(74, 147, 74, 1);
+
+}
+
+.button-container {
+  display: flex;          
+  gap: 16px;            
+}
+.heart, .cart {
+  width: 24px;            
+  height: 24px;
+}
+.button_heart, .button_cart {
+  width: 114px;
+  height: 40px;
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px ;
+  background: rgba(15, 124, 123, 1);
+  box-sizing: border-box;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.sales_button {
+  background:rgba(155, 40, 20, 1);
+}
+.sales_button:hover {
+  background: rgba(190, 71, 50, 1);
+}
+.sales {
+  border-radius: 0px 6px 6px 0px;
+ background: rgba(155, 40, 20, 1);
+ width: 98px;
+height: 23px;
+padding: 4px 10px 4px 10px;
+}
+.percent {
+  right: 0px;
+  border-radius: 6px 0px 0px 6px; 
+  background: rgba(155, 40, 20, 1);
+  width: 49px;
+height:23px;
+padding: 4px 10px 4px 10px;
+font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 14.63px;
+text-align: right;
+}
+.book_price_container {
+  display: flex;           
+  gap: 8px;              
+  align-items: center;    
+}
+
+.book_no_price {
+  text-decoration: line-through; 
+  color: rgba(155, 155, 155, 1); 
+}
+
+.book_price {
+  color: rgba(155, 40, 20, 1);  
+  font-weight: bold;           
+}
+
+.top {
+  background: rgba(191, 160, 122, 1);
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+padding: 2px 5px;
+  
+}
+.top_seller {
+  background: rgba(191, 160, 122, 1);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25.2px;
+  text-align: left;
+}
+.top_seller:hover {
+  background: rgba(172, 139, 98, 1);
+}
