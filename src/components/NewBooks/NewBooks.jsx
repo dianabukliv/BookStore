@@ -29,6 +29,7 @@ export class NewBooks extends Component {
       <button className="button_cart"><img src="/img/shopping_cart.svg" className="cart" /></button>
     </div>
   </div>
+  
 </div>
 
         </div>
