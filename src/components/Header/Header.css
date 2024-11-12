@@ -1,0 +1,270 @@
+.top-header, .main-header, .main-header-choose {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.top-header{
+  background-color: var(--color-4);
+  color: var(--color-1);
+  max-height: 86px;
+}
+
+.header-content, .main-header-content, .choose-type-buttons {
+  display: flex;
+  max-width: 1024px; 
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px;
+}
+
+/*Бургер меню*/
+
+.burger-menu {
+  position: relative;
+}
+
+.burger-icon {
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.menu-content {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: var(--color-4);
+  width: 150px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  /* border: solid 0;
+  border-radius: 10px; */
+}
+
+.menu-item {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+.menu-item:hover {
+  color: #ccc;
+}
+
+/*Деталі*/
+
+.delivery-title, .phone-title{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+.contact-title{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width:178px;
+  gap:6px;
+}
+
+.contact-title p{
+  margin: 0;
+  font-weight: 100;
+}
+
+/*Головний хедер*/
+
+.main-header-content{
+  
+}
+
+.user-pannel-buttons {
+  display: flex;
+  width: 346px;
+  justify-content: space-between;
+}
+
+.header-button {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.type-choose-button{
+  min-width: 180px;
+  max-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  border: solid 1px;
+  border-radius: 20px;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 488px;
+  /* min-width: 347px; */
+  height: 46px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.search-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 488px;
+}
+
+/* .search-input {
+  width: 100%;
+  padding: 10px 20px;
+
+} */
+
+.search-icon, .clear-icon {
+  position: absolute;
+  display:flex;
+  max-height: 25px;
+  top: 50%;
+  width:42px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.search-icon{
+  right: 20px;
+  justify-content: left;
+}
+
+.clear-icon {
+  align-items: center;
+  right: 62px; 
+  justify-content: space-between;
+  font-size:25px;
+  color: #646464;
+  cursor: pointer;
+  pointer-events: auto;
+  p{
+    padding-bottom: 2px;
+  }
+}
+
+/* Overlay для затемнення фону */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2); 
+  visibility: hidden; 
+  pointer-events: none; 
+  z-index: -1; 
+}
+
+.overlay.active {
+  visibility: visible;
+}
+
+.search-input:focus {
+  outline: none; 
+  box-shadow: none;
+}
+
+/* Медіазапити для мобільних пристроїв */
+@media (max-width: 768px) {
+  .top-header {
+    max-height: none;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    height: 142px;
+    margin-bottom:15px;
+  }
+
+
+  .search-input{
+    min-width:none;
+    width:92%;
+    margin: 16px;
+  }
+
+  .delivery-title, .contact-title {
+    display: none;
+  }
+
+  .main-header-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-wrapper {
+    width: 100%;
+    margin: 20px;
+    max-width: none;
+    position: absolute;
+    /* top: 15%; */
+    transform: translateY(-150%);
+    /* width: 347px; */
+  }
+
+  .user-pannel-buttons .header-button:not(.cart-button) {
+    display: none;
+  }
+
+  .choose-type-buttons {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .type-choose-button {
+    width: 100%;
+  }
+
+  .cart-button{
+    position: absolute;
+    padding-right: 25px;
+    top:25px;
+    right: 0;
+
+    span{
+      display:none;
+    }
+  }
+
+  /* .menu-content{
+    width:100%
+  } */
+}
+
+/* Медіазапити для планшетів */
+@media (max-width: 1024px) {
+  .top-header {
+    justify-content: space-between;
+  }
+
+  .main-header-content {
+    padding: 0 10px;
+  }
+
+  .user-pannel-buttons {
+    width: auto;
+  }
+
+  .search-wrapper {
+    max-width: 400px;
+  }
+}
