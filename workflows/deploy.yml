@@ -3,8 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - develop  # Виконується на кожен push в гілку develop
-
+      - develop  
 jobs:
   deploy:
     runs-on: ubuntu-latest

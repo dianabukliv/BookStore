@@ -20,19 +20,23 @@ function AuthorBanner() {
             />
           </div>
           <div className="author-info">
-            <p className="author-specialty text3"> Письменниця та філантропка</p>
-            <h2 className="author-name h2 color-4">Джоан Роулінг </h2>
-            <p className="author-quote text color-1">
-              “Нам не потрібна жодна магія, щоби змінити цей світ. В нас самих є
-              необхідна для цього сила. Ми здатні уявляти краще життя.”
-            </p>
-            <button className="author-button color-1 bg-color-5 ">
-              Дивитись підбірку
-            </button>
-            <div className="author-books">
-              <img src={book} alt="Book Cover" />
-              <img src={book} alt="Book Cover" />
-              <img src={book} alt="Book Cover" />
+            <div className="author-info-text">
+              <p className="author-specialty text3">
+                Письменниця та філантропка
+              </p>
+              <h2 className="author-name h2 color-4">Джоан Роулінг </h2>
+              <p className="author-quote text color-1">
+                “Нам не потрібна жодна магія, щоби змінити цей світ. В нас самих
+                є необхідна для цього сила. Ми здатні уявляти краще життя.”
+              </p>
+              <button className="author-button color-1 bg-color-5 ">
+                Дивитись підбірку
+              </button>
+              <div className="author-books">
+                <img src={book} alt="Book Cover" />
+                <img src={book} alt="Book Cover" />
+                <img src={book} alt="Book Cover" />
+              </div>
             </div>
             <div className="author-follow">
               <p className="text3 color-2">Стежити за автором</p>
