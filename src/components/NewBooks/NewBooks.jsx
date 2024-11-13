@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import './NewBooks.css';
+import vectorIcon from '../../assets/icons/vector.svg';
+import book from '../../assets/images/newBooks/book.jpg';
+import checkCircle from '../../assets/icons/check_circle_outline.svg';
+import heart from '../../assets/icons/heart.svg';
+import shopCart from '../../assets/icons/shopping_cart.svg';
 
 export class NewBooks extends Component {
   render() {
@@ -9,7 +14,7 @@ export class NewBooks extends Component {
         <div>
         <button className='new_button'>
           Новинки    
-        <img src="/img/vector.svg" className='vector' width="19" height="8"/>
+        <img src={vectorIcon} className='vector' width="19" height="8"/>
         </button>
         </div>
         <div>
@@ -17,16 +22,16 @@ export class NewBooks extends Component {
   <div className="book_component">
     <div className="image_container">
       <p className="imposition new">Новинка</p>
-      <img src="/img/book.jpg" alt="Book" className="book_img" />
+      <img src={book} alt="Book" className="book_img" />
     </div>
     <p className="book_code">00000000000</p>
     <h2 className="book_name">Назва Книги Назва Книги Назва Книги Назва Книги</h2>
     <p className="book_avtor">Автор Книги</p>
     <b className="book_price">800 грн</b>
-    <p className="in_stock"><img src="/img/check_circle_outline.svg" className="check_circle" />В наявності</p>
+    <p className="in_stock"><img src={checkCircle} className="check_circle" />В наявності</p>
     <div className="button-container">
-      <button className="button_heart"><img src="/img/heart.svg" className="heart" /></button>
-      <button className="button_cart"><img src="/img/shopping_cart.svg" className="cart" /></button>
+      <button className="button_heart"><img src={heart} className="heart" /></button>
+      <button className="button_cart"><img src={shopCart} className="cart" /></button>
     </div>
   </div>
 </div>
@@ -37,7 +42,7 @@ export class NewBooks extends Component {
       <div>
       <button className='sales_button'>
       Акції    
-      <img src="/img/vector.svg" className='vector' width="19" height="8"/>
+      <img src={vectorIcon} className='vector' width="19" height="8"/>
       </button>
       </div>
       <div>
@@ -46,7 +51,7 @@ export class NewBooks extends Component {
   <div className="image_container">
     <p className="imposition sales">Акція</p>
     <p className="imposition percent">-10%</p>
-    <img src="/img/book.jpg" alt="Book" className="book_img" />
+    <img src={book} alt="Book" className="book_img" />
   </div>
   <p className="book_code">00000000000</p>
   <h2 className="book_name">Назва Книги Назва Книги Назва Книги Назва Книги</h2>
@@ -55,10 +60,10 @@ export class NewBooks extends Component {
   <p className='book_no_price'>900 Грн</p>
   <b className="book_price">800 грн</b>
   </div>
-  <p className="in_stock"><img src="/img/check_circle_outline.svg" className="check_circle" />В наявності</p>
+  <p className="in_stock"><img src={checkCircle} className="check_circle" />В наявності</p>
   <div className="button-container">
-    <button className="button_heart"><img src="/img/heart.svg" className="heart" /></button>
-    <button className="button_cart"><img src="/img/shopping_cart.svg" className="cart" /></button>
+    <button className="button_heart"><img src={heart} className="heart" /></button>
+    <button className="button_cart"><img src={shopCart} className="cart" /></button>
   </div>
 </div>
 </div>
@@ -69,7 +74,7 @@ export class NewBooks extends Component {
         <div>
         <button className='top_seller'>
         Топ продажу    
-        <img src="/img/vector.svg" className='vector' width="19" height="8"/>
+        <img src={vectorIcon} className='vector' width="19" height="8"/>
         </button>
         </div>
         <div>
@@ -77,16 +82,16 @@ export class NewBooks extends Component {
   <div className="book_component">
     <div className="image_container">
       <p className="imposition top">Топ продажу</p>
-      <img src="/img/book.jpg" alt="Book" className="book_img" />
+      <img src={book} alt="Book" className="book_img" />
     </div>
     <p className="book_code">00000000000</p>
     <h2 className="book_name">Назва Книги Назва Книги Назва Книги Назва Книги</h2>
     <p className="book_avtor">Автор Книги</p>
     <b className="book_price">800 грн</b>
-    <p className="in_stock"><img src="/img/check_circle_outline.svg" className="check_circle" />В наявності</p>
+    <p className="in_stock"><img src={checkCircle} className="check_circle" />В наявності</p>
     <div className="button-container">
-      <button className="button_heart"><img src="/img/heart.svg" className="heart" /></button>
-      <button className="button_cart"><img src="/img/shopping_cart.svg" className="cart" /></button>
+      <button className="button_heart"><img src={heart} className="heart" /></button>
+      <button className="button_cart"><img src={shopCart} className="cart" /></button>
     </div>
   </div>
 </div>
