@@ -177,4 +177,8 @@
   }
 }
 
-
+@media (max-width: 510px){
+.author-info-text h2 {
+  font-size: 40px;
+}
+}
