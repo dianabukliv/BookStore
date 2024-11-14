@@ -1,0 +1,94 @@
+.discount-baner {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.discount-banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  gap: 24px;
+}
+.discount-info,
+.discount-book {
+  flex: 1;
+  max-width: 50%;
+}
+.discount-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.discount-condition {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.discount-percent {
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 97.52px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-bottom: 40px;
+}
+
+.discount-registration {
+  font-size: var(--font-text2);
+  padding: 8px 24px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.discount-registration:hover {
+  background-color: var(  --color-7);
+ 
+}
+
+
+.discount-registration:active {
+  background-color: var( --color-8);
+ 
+}
+
+.discount-book {
+  
+}
+
+.discount-book img {
+ width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  max-width: 413px;
+}
+@media (max-width: 768px) {
+  .discount-baner{
+    padding: 0;
+  }
+  .discount-banner-container{
+    flex-direction: column;
+  
+  }
+  .discount-info,
+.discount-book {
+  max-width: 90%;
+}
+ .discount-condition {
+  font-size: var(--font-text3);
+  font-weight: var(--font-medium);
+ } 
+ .discount-percent{
+  font-weight: var( --font-medium);
+ }
+ .discount-book {
+  min-width: 300px;
+ }
+}
